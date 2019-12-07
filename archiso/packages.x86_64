@@ -805,6 +805,7 @@ libyaml
 libzip
 libzmf
 licenses
+lightdm
 linux
 linux-api-headers
 linux-atm
@@ -1099,8 +1100,6 @@ sardi-icons
 sbc
 screen
 scrot
-sddm
-sddm-kcm
 sdl
 sdl2
 sdparm
