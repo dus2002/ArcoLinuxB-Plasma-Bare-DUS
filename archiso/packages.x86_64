@@ -212,7 +212,7 @@ wget
 wireless-regdb
 wireless_tools
 wmctrl
-      3 wpa_supplicant
+wpa_supplicant
 wvdial
 xapps
 xdg-user-dirs
