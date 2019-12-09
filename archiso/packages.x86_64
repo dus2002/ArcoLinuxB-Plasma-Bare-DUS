@@ -764,6 +764,7 @@ appstream-glib
 appstream-qt
 arch-install-scripts
 archiso
+arc-gtk-theme
 archlinux-appstream-data
 archlinux-keyring
 arcolinux-bin-git
