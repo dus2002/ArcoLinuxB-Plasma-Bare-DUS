@@ -750,7 +750,6 @@ acl
 adobe-source-code-pro-fonts
 adobe-source-sans-pro-fonts
 adwaita-icon-theme
-alpm-octopi-utils
 alsa-firmware
 alsa-lib
 alsa-plugins
@@ -1636,8 +1635,6 @@ numix-circle-icon-theme-git
 numix-icon-theme-git
 numix-kde-theme-git
 numlockx
-octopi
-octopi-notifier-frameworks
 okular
 openal
 openconnect
@@ -1645,7 +1642,6 @@ opencore-amr
 openexr
 openjpeg2
 openresolv
-opensnitch-git
 openssh
 openssl
 openssl-1.0
@@ -1762,7 +1758,6 @@ python-dbus-common
 python-docopt
 python-gobject
 python-grpcio
-python-grpcio-tools
 python-httplib2
 python-idna
 python-keyutils
@@ -1783,7 +1778,6 @@ python-setuptools
 python-sip-pyqt5
 python-six
 python-soupsieve
-python-unicode-slugify
 python-unidecode
 python-urllib3
 python-yaml
@@ -1796,7 +1790,6 @@ python2-psutil
 python2-pyparted
 python2-scour
 python2-six
-python2-xapp
 python2-xdg
 qca
 qgpgme
@@ -1865,7 +1858,6 @@ signond
 slang
 smartmontools
 smbclient
-snapd
 snappy
 socat
 solid
