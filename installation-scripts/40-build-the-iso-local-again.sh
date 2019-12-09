@@ -69,10 +69,16 @@ echo "################################################################## "
 tput setaf 2;echo "Phase 2 : Getting the latest versions for some important files";tput sgr0
 echo "################################################################## "
 echo
-echo "Removing the old packages.x86_64 file from work folder"
+echo "Removing the old files from work folder"
 rm ../work/archiso/packages.x86_64
-echo "Copying the new packages.x86_64 file"
+rm ../work/archiso/mkinitcpio.conf
+rm ../work/archiso/pacman.conf
+rm ../work/archiso/pacman.conf.work_dir
+echo "Copying the new files"
 cp -f ../archiso/packages.x86_64 ../work/archiso/packages.x86_64
+cp -f ../archiso/mkinitcpio.conf ../work/archiso/mkinitcpio.conf
+cp -f ../archiso/pacman.conf ../work/archiso/pacman.conf
+cp -f ../archiso/pacman.conf.work_dir ../work/archiso/pacman.conf.work_dir
 
 echo "Removing old files/folders from /etc/skel"
 rm -rf ../work/archiso/airootfs/etc/skel/.* 2> /dev/null
