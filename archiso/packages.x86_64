@@ -299,7 +299,6 @@ ttf-ubuntu-font-family
 
 ###lightdm
 accountsservice
-lightdm
 
 ###lx-applications
 #lxappearance
