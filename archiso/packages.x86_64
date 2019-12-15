@@ -1745,7 +1745,6 @@ pulseaudio-bluetooth
 pulseaudio-equalizer-ladspa
 purpose
 pygobject-devel
-pyqt5-common
 python
 python-appdirs
 python-beautifulsoup4
