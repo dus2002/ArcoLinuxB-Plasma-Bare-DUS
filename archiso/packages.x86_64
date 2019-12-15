@@ -396,10 +396,6 @@ zenity
 #                           ARCOLINUX_REPO_ISO
 ###########################################################################
 
-###applications
-vivaldi
-#vivaldi-codecs-ffmpeg-extra-bin
-
 ###cursors
 #breeze-cursors-lh
 #breeze-obsidian-cursor-theme
