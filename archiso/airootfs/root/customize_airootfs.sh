@@ -84,7 +84,7 @@ function fixPermissionsFunc() {
 }
 
 function enableServicesFunc() {
-	systemctl enable sddm.service
+	systemctl enable lightdm.service
 	systemctl set-default graphical.target
 	systemctl enable NetworkManager.service
 	systemctl enable virtual-machine-check.service

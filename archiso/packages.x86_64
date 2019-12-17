@@ -297,6 +297,7 @@ ttf-ubuntu-font-family
 #papirus-icon-theme
 
 ###lightdm
+lightdm
 accountsservice
 
 ###lx-applications
