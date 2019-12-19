@@ -16,6 +16,7 @@
 ##################################################################################################################
 buildFolder="$HOME/arcolinuxb-build"
 outFolder="$HOME/ArcoLinuxB-Out"
+WorkFolder="$HOME/ArcoLinuxWork
 
 #Setting variables
 #Let us change the name"
@@ -58,11 +59,11 @@ tput setaf 2;echo "Phase 1 : clean up and download the latest ArcoLinux-iso from
 echo "################################################################## "
 echo
 echo "Deleting the work folder if one exists"
-[ -d ../work ] && rm -rf ../work
+[ -d $WorkFolder ] && rm -rf $WorkFolder
 echo "Deleting the build folder if one exists - takes some time"
 [ -d $buildFolder ] && sudo rm -rf $buildFolder
 echo "Git cloning files and folder to work folder"
-git clone https://github.com/arcolinux/arcolinux-iso.git ../work
+git clone https://github.com/arcolinux/arcolinux-iso.git $WorkFolder
 
 echo
 echo "################################################################## "
@@ -70,25 +71,25 @@ tput setaf 2;echo "Phase 2 : Getting the latest versions for some important file
 echo "################################################################## "
 echo
 echo "Removing the old files from work folder"
-rm ../work/archiso/packages.x86_64
-rm ../work/archiso/mkinitcpio.conf
-rm ../work/archiso/pacman.conf
-rm ../work/archiso/pacman.conf.work_dir
-rm ../work/archiso/airootfs/root/customize_airootfs.sh
-rm ../work/archiso/build.sh
+rm $WorkFolder/archiso/packages.x86_64
+rm $WorkFolder/archiso/mkinitcpio.conf
+rm $WorkFolder/archiso/pacman.conf
+rm $WorkFolder/archiso/pacman.conf.work_dir
+rm $WorkFolder/archiso/airootfs/root/customize_airootfs.sh
+rm $WorkFolder/archiso/build.sh
 echo "Copying the new files"
-cp -f ../archiso/packages.x86_64 ../work/archiso/packages.x86_64
-cp -f ../archiso/mkinitcpio.conf ../work/archiso/mkinitcpio.conf
-cp -f ../archiso/pacman.conf ../work/archiso/pacman.conf
-cp -f ../archiso/pacman.conf.work_dir ../work/archiso/pacman.conf.work_dir
-cp -f ../archiso/airootfs/root/customize_airootfs.sh ../work/archiso/airootfs/root/customize_airootfs.sh
-cp -f ../archiso/build.sh ../work/archiso/build.sh
+cp -f ../archiso/packages.x86_64 $WorkFolder/archiso/packages.x86_64
+cp -f ../archiso/mkinitcpio.conf $WorkFolder/archiso/mkinitcpio.conf
+cp -f ../archiso/pacman.conf $WorkFolder/archiso/pacman.conf
+cp -f ../archiso/pacman.conf.work_dir $WorkFolder/archiso/pacman.conf.work_dir
+cp -f ../archiso/airootfs/root/customize_airootfs.sh $WorkFolder/archiso/airootfs/root/customize_airootfs.sh
+cp -f ../archiso/build.sh $WorkFolder/archiso/build.sh
 
 echo "Removing old files/folders from /etc/skel"
-rm -rf ../work/archiso/airootfs/etc/skel/.* 2> /dev/null
+rm -rf $WorkFolder/archiso/airootfs/etc/skel/.* 2> /dev/null
 
 echo "getting .bashrc from arcolinux-root"
-wget https://raw.githubusercontent.com/arcolinux/arcolinux-root/master/etc/skel/.bashrc-latest -O ../work/archiso/airootfs/etc/skel/.bashrc
+wget https://raw.githubusercontent.com/arcolinux/arcolinux-root/master/etc/skel/.bashrc-latest -O $WorkFolder/archiso/airootfs/etc/skel/.bashrc
 
 echo
 echo "################################################################## "
@@ -98,14 +99,14 @@ echo
 echo "Renaming to "$newname1
 echo "Renaming to "$newname2
 echo
-sed -i 's/'$oldname1'/'$newname1'/g' ../work/archiso/build.sh
-sed -i 's/'$oldname2'/'$newname2'/g' ../work/archiso/build.sh
-sed -i 's/'$oldname3'/'$newname3'/g' ../work/archiso/airootfs/etc/os-release
-sed -i 's/'$oldname4'/'$newname4'/g' ../work/archiso/airootfs/etc/os-release
-sed -i 's/'$oldname5'/'$newname5'/g' ../work/archiso/airootfs/etc/lsb-release
-sed -i 's/'$oldname6'/'$newname6'/g' ../work/archiso/airootfs/etc/lsb-release
-sed -i 's/'$oldname7'/'$newname7'/g' ../work/archiso/airootfs/etc/hostname
-sed -i 's/'$oldname8'/'$newname8'/g' ../work/archiso/airootfs/etc/hosts
+sed -i 's/'$oldname1'/'$newname1'/g' $WorkFolder/archiso/build.sh
+sed -i 's/'$oldname2'/'$newname2'/g' $WorkFolder/archiso/build.sh
+sed -i 's/'$oldname3'/'$newname3'/g' $WorkFolder/archiso/airootfs/etc/os-release
+sed -i 's/'$oldname4'/'$newname4'/g' $WorkFolder/archiso/airootfs/etc/os-release
+sed -i 's/'$oldname5'/'$newname5'/g' $WorkFolder/archiso/airootfs/etc/lsb-release
+sed -i 's/'$oldname6'/'$newname6'/g' $WorkFolder/archiso/airootfs/etc/lsb-release
+sed -i 's/'$oldname7'/'$newname7'/g' $WorkFolder/archiso/airootfs/etc/hostname
+sed -i 's/'$oldname8'/'$newname8'/g' $WorkFolder/archiso/airootfs/etc/hosts
 
 echo
 echo "################################################################## "
@@ -168,7 +169,7 @@ echo
 
 echo "Copying files and folder to build folder as root"
 sudo mkdir $buildFolder
-sudo cp -r ../work/* $buildFolder
+sudo cp -r $WorkFolder/* $buildFolder
 
 sudo chmod 750 ~/arcolinuxb-build/archiso/airootfs/etc/sudoers.d
 sudo chmod 750 ~/arcolinuxb-build/archiso/airootfs/etc/polkit-1/rules.d
@@ -208,4 +209,4 @@ tput setaf 2;echo "Phase 9 : Making sure we start with a clean slate next time";
 echo "################################################################## "
 echo
 echo "Deleting the build folder if one exists - takes some time"
-[ -d $buildFolder ] && sudo rm -rf $buildFolder
+[ -d $WorkFolder ] && sudo rm -rf $WorkFolder
