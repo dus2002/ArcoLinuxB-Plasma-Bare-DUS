@@ -1285,7 +1285,6 @@ xorg-xauth
 xorg-xbacklight
 xorg-xcmsdb
 xorg-xcursorgen
-xorg-xdpyinfo
 xorg-xdriinfo
 xorg-xev
 xorg-xgamma
