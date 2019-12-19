@@ -161,7 +161,6 @@ enchant
 ethtool
 exfat-utils
 exiv2
-exo
 expac
 expat
 f2fs-tools
@@ -180,7 +179,6 @@ file-roller
 filesystem
 findutils
 flac
-flatpak
 flex
 fontconfig
 frameworkintegration
@@ -1211,10 +1209,6 @@ wget
 which
 whois
 wildmidi
-wine
-wine-mono
-wine-nine
-wine_gecko
 wireless-regdb
 wireless_tools
 wmctrl
@@ -1267,7 +1261,6 @@ xfwm4
 xkeyboard-config
 xl2tpd
 xmlsec
-xorg-apps
 xorg-bdftopcf
 xorg-font-util
 xorg-font-utils
