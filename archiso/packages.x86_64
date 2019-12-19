@@ -30,7 +30,6 @@ arcolinux-config-plasma-git
 arcolinux-cron-git
 arcolinux-fonts-git
 arcolinux-geany-git
-arcolinux-grub-theme-vimix-git
 arcolinux-hblock-git
 arcolinux-keyring
 arcolinux-lightdm-gtk-greeter-plasma
@@ -39,8 +38,6 @@ arcolinux-local-xfce4-git
 arcolinux-mirrorlist-git
 arcolinux-neofetch-git
 arcolinux-pipemenus-git
-arcolinux-plank-git
-arcolinux-plank-themes-git
 arcolinux-plasma-dconf-git
 arcolinux-plasma-git
 arcolinux-qt5-plasma-git
