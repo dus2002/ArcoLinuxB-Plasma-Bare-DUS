@@ -174,9 +174,6 @@ sudo chmod 750 ~/arcolinuxb-build/archiso/airootfs/etc/sudoers.d
 sudo chmod 750 ~/arcolinuxb-build/archiso/airootfs/etc/polkit-1/rules.d
 sudo chgrp polkitd ~/arcolinuxb-build/archiso/airootfs/etc/polkit-1/rules.d
 
-echo "Deleting the work folder if one exists - clean up"
-[ -d ../work ] && rm -rf ../work
-
 cd $buildFolder/archiso
 
 
@@ -194,7 +191,7 @@ tput setaf 2;echo "Phase 7 : Building the iso";tput sgr0
 echo "################################################################## "
 echo
 
-sudo ./build.sh -v
+sudo bash ./build.sh -v
 
 echo
 echo "################################################################## "
