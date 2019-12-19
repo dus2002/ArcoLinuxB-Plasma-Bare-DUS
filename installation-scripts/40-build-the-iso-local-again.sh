@@ -75,12 +75,14 @@ rm ../work/archiso/mkinitcpio.conf
 rm ../work/archiso/pacman.conf
 rm ../work/archiso/pacman.conf.work_dir
 rm ../work/archiso/airootfs/root/customize_airootfs.sh
+rm ../work/archiso/build.sh
 echo "Copying the new files"
 cp -f ../archiso/packages.x86_64 ../work/archiso/packages.x86_64
 cp -f ../archiso/mkinitcpio.conf ../work/archiso/mkinitcpio.conf
 cp -f ../archiso/pacman.conf ../work/archiso/pacman.conf
 cp -f ../archiso/pacman.conf.work_dir ../work/archiso/pacman.conf.work_dir
 cp -f ../archiso/airootfs/root/customize_airootfs.sh ../work/archiso/airootfs/root/customize_airootfs.sh
+cp -f ../archiso/build.sh ../work/archiso/build.sh
 
 echo "Removing old files/folders from /etc/skel"
 rm -rf ../work/archiso/airootfs/etc/skel/.* 2> /dev/null
