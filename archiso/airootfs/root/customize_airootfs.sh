@@ -17,6 +17,10 @@ function deleteXfceWallpapers() {
     rm -rf /usr/share/backgrounds/xfce
 }
 
+function AURInstalls() {
+	yay -S --noconfirm octopi alpm_octopi_utils octopi-notifier-frameworks
+}
+
 function umaskFunc() {
     set -e -u
     umask 022
@@ -136,6 +140,8 @@ function getNewMirrorCleanAndUpgrade() {
 
 deleteXfceWallpapers
 layout deleteXfceWallpapers
+AURInstalls
+layout AURInstalls
 umaskFunc
 layout umaskFunc
 #localeGenFunc
