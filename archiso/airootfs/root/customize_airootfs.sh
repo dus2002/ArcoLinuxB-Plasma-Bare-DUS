@@ -18,7 +18,7 @@ function deleteXfceWallpapers() {
 }
 
 function AURInstalls() {
-	yay -S --noconfirm octopi alpm_octopi_utils octopi-notifier-frameworks
+	sudo -u liveuser yay -S --noconfirm octopi alpm_octopi_utils octopi-notifier-frameworks
 }
 
 function umaskFunc() {
@@ -140,8 +140,6 @@ function getNewMirrorCleanAndUpgrade() {
 
 deleteXfceWallpapers
 layout deleteXfceWallpapers
-AURInstalls
-layout AURInstalls
 umaskFunc
 layout umaskFunc
 #localeGenFunc
@@ -154,6 +152,8 @@ configRootUserFunc
 layout configRootUserFunc
 createLiveUserFunc
 layout createLiveUserFunc
+AURInstalls
+layout AURInstalls
 setDefaultsFunc
 layout setDefaultsFunc
 fixHavegedFunc
