@@ -273,7 +273,6 @@ gvfs-nfs
 gvfs-smb
 gzip
 hardcode-fixer-git
-hardinfo
 harfbuzz
 harfbuzz-icu
 haveged
