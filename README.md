@@ -5,8 +5,8 @@ This isn't a official ArcoLinuxB ISO, it's my own fork. Follow the official link
 
 That's my own spin of the Minimal Plasma edition of ArcoLinuxB. As I found the system full of metapackages, and I think it shouldn't have them, I forked the repository, and I started to modify it.
 
-# Get your code to build your own iso
-
+# Get your code and build your own iso
+It's needed an ArcoLinux system (I think on Arch would work too, but maybe there are fails as Arco has more repos ;)
 	git clone https://github.com/dus2002/ArcoLinuxB-Plasma-Minimal-DUS
 	cd ./ArcoLinuxB-Plasma-Minimal-DUS/installation-scripts
 	sudo bash ./30* (If first build) or ./40* (If you have built more ISO's)
