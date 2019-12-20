@@ -18,7 +18,7 @@ function deleteXfceWallpapers() {
 }
 
 function AURInstalls() {
-	sudo -u liveuser yay -S --noconfirm octopi alpm_octopi_utils octopi-notifier-frameworks
+	sudo -u liveuser yay -S octopi alpm_octopi_utils octopi-notifier-frameworks
 }
 
 function umaskFunc() {
