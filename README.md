@@ -10,7 +10,7 @@ It's needed an ArcoLinux system (I think on Arch would work too, but maybe there
 	git clone https://github.com/dus2002/ArcoLinuxB-Plasma-Bare-DUS
 	cd ./ArcoLinuxB-Plasma-Minimal-DUS/installation-scripts
 	sudo bash ./30* (If first build) or ./40* (If you have built more ISO's)
-	At the end of the ISO creation, you'll see that yay asks your opinion about what Octopi package create: choose one, but think about it, because it's your choice.
+	At the end of the ISO creation, you'll see that yay asks your opinion about what Octopi package create: choose one, but 	think about it, because it's your choice.
 	#That's only if you don't want to navigate to /root
 	sudo mv -r /root/ArcoLinuxB-Out "your real home"/ArcoLinuxB-Out
 	
