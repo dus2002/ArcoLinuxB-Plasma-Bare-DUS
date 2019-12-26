@@ -1,13 +1,13 @@
 # DISCLAIMER
 This isn't a official ArcoLinuxB ISO, it's my own fork. Follow the official links below for the official Isos, or try the mine. But if your personal porn computer with that system starts to send e-mails to your couple with compromised data, or you lose all your job's data, and try to take me responsability, I'll laugh at your face, and then try to help you, but I don't promise nothing
 
-# ArcoLinux BYOI Plasma Minimal desktop
+# ArcoLinux BYOI Plasma Bare desktop
 
 That's my own spin of the Minimal Plasma edition of ArcoLinuxB. As I found the system full of metapackages, and I think it shouldn't have them, I forked the repository, and I started to modify it.
 
 # Get your code and build your own iso
 It's needed an ArcoLinux system (I think on Arch would work too, but maybe there are fails as Arco has more repos ;)
-	git clone https://github.com/dus2002/ArcoLinuxB-Plasma-Minimal-DUS
+	git clone https://github.com/dus2002/ArcoLinuxB-Plasma-Bare-DUS
 	cd ./ArcoLinuxB-Plasma-Minimal-DUS/installation-scripts
 	sudo bash ./30* (If first build) or ./40* (If you have built more ISO's)
 	At the end of the ISO creation, you'll see that yay asks your opinion about what Octopi package create: choose one, but think about it, because it's your choice.
