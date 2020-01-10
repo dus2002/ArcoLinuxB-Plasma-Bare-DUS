@@ -18,7 +18,7 @@ function deleteXfceWallpapers() {
 }
 
 function AURInstalls() {
-	sudo -u liveuser yay -S octopi alpm_octopi_utils octopi-notifier-frameworks peazip-gtk2-portable
+	sudo -u liveuser yay --noconfirm -S pamac-aur pamac-tray-appindicators peazip-gtk2-portable
 }
 
 function umaskFunc() {
