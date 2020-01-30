@@ -13,6 +13,7 @@ It's needed an ArcoLinux system (I think on Arch would work too, but maybe there
 	sudo bash ./30* (If first build) or ./40* (If you have built more ISO's)
 	#That's only if you don't want to navigate to /root
 	sudo mv -r /root/ArcoLinuxB-Out "your real home"/ArcoLinuxB-Out
+	sudo chmod -R 777 "your real home"/ArcoLinuxB-Out
 	
 
 # Follow installation tutorials on
