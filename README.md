@@ -56,4 +56,4 @@ Mewe Group : https://mewe.com/group/5bbc4577a40f3002b313671d
 Mewe ArcoLinux : https://mewe.com/profile/5bc022ac70fb13619f97af90
 
 # Releases
-I'll try to build releases every sunday. But if you don't have it, don't die. Maybe there is a problem with the repos...
+I cannot host the releases on GitHub, so you'll need to make your own ISO
