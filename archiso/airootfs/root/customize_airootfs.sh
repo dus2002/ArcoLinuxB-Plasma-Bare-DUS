@@ -18,7 +18,13 @@ function deleteXfceWallpapers() {
 }
 
 function AURInstalls() {
-	sudo -u liveuser yay --noconfirm -S dolphin-root-git pamac-aur pamac-tray-appindicator peazip-gtk2-portable
+	sudo -u liveuser yay --noconfirm -S dolphin-root-git pamac-aur pamac-tray-appindicator peazip-gtk2-portable gnome-system-tools
+}
+
+function Snapd() {
+	sudo -u liveuser yay --noconfirm -S snapd
+	systemctl enable snapd.socket
+	sudo ln -s /var/lib/snapd/snap /snap
 }
 
 function umaskFunc() {
@@ -154,6 +160,8 @@ createLiveUserFunc
 layout createLiveUserFunc
 AURInstalls
 layout AURInstalls
+Snapd
+layout Snapd
 setDefaultsFunc
 layout setDefaultsFunc
 fixHavegedFunc
