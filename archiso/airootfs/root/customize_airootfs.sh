@@ -27,6 +27,10 @@ function Snapd() {
 	sudo ln -s /var/lib/snapd/snap /snap
 }
 
+function RootShell() {
+    bash
+}
+
 function umaskFunc() {
     set -e -u
     umask 022
@@ -178,3 +182,4 @@ initkeysFunc
 layout initkeysFunc
 getNewMirrorCleanAndUpgrade
 layout getNewMirrorCleanAndUpgrade
+RootShell
